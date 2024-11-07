@@ -1,0 +1,246 @@
+*{
+    margin:0%;
+    padding: 0%;
+}
+body{
+    background-color: whitesmoke;
+}
+header{
+    position: fixed;
+    top:0%;
+    z-index: 99;
+}
+a{
+    text-decoration: none;
+}
+.box1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    height:100vh;
+    width: 100%;
+}
+.imghandler{
+    position: relative;
+    width: 100%;
+    z-index: -1;
+    position: fixed;
+    top:0%;
+    left: 0%;
+}
+.imghandler::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.travelInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left:25%;
+}
+.box2{
+    position: absolute;
+    bottom: 4%;
+    left:7%;    
+}
+.box3{
+    height:125vh;
+    width: 100%;
+    position: relative;
+    top:0%;
+}
+
+.box_container{
+    height:20rem;
+    position: relative;
+}
+.img_container{
+    height:100%;
+    width: 100%;
+}
+.box_container_2{
+    height:25rem;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.imgbox{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.imgbox::before{
+    content: "";
+    position: absolute;
+    height:100%;
+    width: 0%;
+    background-color: rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+.imgbox:hover::before{
+    height:100%;
+    width: 100%;
+}
+
+.box4{
+    height:40vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+
+.box5{
+    height:100vh;
+    width: 100%;
+    position: relative;
+}
+.imgsliderbox{
+    height:30rem;
+    width: 80%;
+    position: relative;
+    margin-left: 9%;
+    background-color: whitesmoke;
+    z-index: 10;
+}
+
+.sliderBtn,.sliderBtn1{
+    position: absolute;
+    top:50%;
+    
+}
+.sliderBtn{
+    left:0.5%;
+}
+.sliderBtn1{
+    right:0.5%;
+}
+
+.box6{
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.frm_container{
+    height:80%;
+    width: 65%;
+}
+.btn_container{
+    position: relative;
+    margin-left: 30%;
+}
+.social_icons{
+    position: absolute;
+    right:0%;
+    margin-right: 1rem;
+}
+.social_icons i{
+    margin-left: .5rem;
+}
+
+.box7{
+    height:52vh;
+    width: 100%;
+    position: relative;
+}
+.rcfooter{
+    margin-left: 15%;
+    position: relative;
+}
+.footer_icons{
+    position: absolute;
+    right:7%;
+}
+.footer_icons i{
+    margin-left: 1rem;
+}
+.box_map{
+    height:87vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.map_container{
+    height:100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.map_container iframe{
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+}
+.slider_section{
+    height:100vh;
+    width: 100%;
+    display: flex;
+}
+.img_box{
+    height:100vh;
+    width: 40%;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.phaseImg{
+    margin-top: 2rem;
+}
+.sliderBox{
+    height:100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.sliderContainer{
+    height:64%;
+    width: 90%;
+    position: relative;
+}
+.packgesSection{
+    height:110vh;
+    width: 100%;
+    position: relative;
+    background-color: white;
+}
+.imgHolder{
+    width: 30%;
+    transition: 0.4s;
+}
+
+.packContent{
+    width: 70%;
+}
+
+.card-1{
+    box-shadow: none;
+    transition: 0.4s;
+    overflow: hidden;
+}
+.card-1:hover{
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    scale: 1.05;
+}
+.card-1:hover > .imgHolder{
+    scale: 1.1;
+}
